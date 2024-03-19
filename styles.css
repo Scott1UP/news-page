@@ -1,0 +1,25 @@
+/* Global styles */
+:root {
+    /* Primary colours */
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%)
+
+    /* Neutral colours */
+    --off-white: hsl(36, 100%, 99%);
+    --gry-blue: hsl(233, 8%, 79%);
+    --dk-gry-blue: hsl(236, 13%, 42%);
+    --v-dk-blue: hsl(240, 100%, 5%);
+}
+
+body, h1, h2, h3, h4, h5, h6, p,
+dl, dd, blockquote, figure {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter';
+    font-size: 15px;
+}
+
+/* Mobile styles */
+
