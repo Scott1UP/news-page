@@ -15,10 +15,10 @@
     <nav>
       <div class="logo-and-menu">
         <img class="logo" src="./images/logo.svg" alt="W news logo">
-        <img class="ham-menu" src="./images/icon-menu.svg" alt="Menu icon.">
+        <img class="ham-menu" id="menu" src="./images/icon-menu.svg" alt="Menu icon.">
       </div>
       <div class="mob-nav-menu disabled">
-        <img src="./images/icon-menu-close.svg" alt="A close menu icon.">
+        <img src="./images/icon-menu-close.svg" id="close" alt="A close menu icon.">
         <div class="nav-links">
           <p class="nav-link">Home</p>
           <p class="nav-link">New</p>
@@ -28,6 +28,8 @@
         </div>
       </div>
     </nav>
+
+    <div id="overlay"></div>
     
     <main class="hero">
       <img class="hero-image" src="./images/image-web-3-mobile.jpg" alt="Colourful 3D geometric shapes in an isometric view.">
@@ -93,5 +95,6 @@
       </div>    
     </section>
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
