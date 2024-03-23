@@ -35,6 +35,10 @@ nav {
     margin-bottom: 2rem;
 }
 
+.logo-and-links {
+    display: none;
+}
+
 .logo-and-menu {
     display: flex;
     flex-direction: row;
@@ -98,7 +102,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top: 8rem;
+    margin-top: 9rem;
 }
 
 .nav-link {
@@ -130,10 +134,14 @@ nav {
     margin-bottom: 4rem;
 }
 
-.hero-image {
+.hero-image-mob {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+.hero-image-desktop {
+    display: none;
 }
 
 .hero-content {
@@ -274,3 +282,70 @@ hr {
 }
 
 
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 69.5rem;
+        margin: 1rem;
+    }
+
+    .logo-and-menu {
+        display: none;
+    }
+
+    .logo-and-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .logo-and-links .nav-link {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .nav-links-desktop {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .hero-image-mob {
+        display: none;
+    }
+
+    .hero-image-desktop {
+        display: block;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .hero-and-new {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.75rem;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .hero-heading {
+        font-size: 3.25rem;
+    }
+
+    .body-and-btn {
+        width: 110%;
+    }
+
+    .ranked-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

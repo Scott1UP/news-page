@@ -20,4 +20,4 @@ closeMenu.addEventListener("click", event => {
     event.preventDefault();
     mobileNav.classList.add("disabled");
     overlayOff();
-})
+});
