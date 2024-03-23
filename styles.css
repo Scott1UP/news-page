@@ -31,13 +31,54 @@ body {
 nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: .5rem;
     margin-bottom: 2rem;
 }
 
-nav img {
+.logo-and-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .75rem;
+}
+
+.logo {
     width: 3rem;
+}
+
+.disabled {
+    display: none !important;
+}
+
+.mob-nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 68vw;
+    background-color: var(--off-white);
+}
+
+.mob-nav-menu .nav-link {
+    padding: 0 1.5rem;
+    font-size: 18px;
+    color: var(--v-dk-blue);
+}
+
+.mob-nav-menu img {
+    width: 2rem;
+    position: absolute;
+    right: 0;
+    padding: 1rem 1.25rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 8rem;
 }
 
 .nav-link {
@@ -105,7 +146,7 @@ nav img {
 .new-section {
     display: flex;
     flex-direction: column;
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 1.5rem 1.25rem;
     background-color: var(--v-dk-blue);
     margin-bottom: 4rem;
 }
@@ -114,7 +155,7 @@ nav img {
     font-size: 2rem;
     font-weight: 700;
     color: var(--soft-orange);
-    margin-bottom: .75rem;
+    margin-bottom: 2rem;
 }
 
 .aside-article {
@@ -127,19 +168,21 @@ nav img {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--off-white);
-    margin-top: 1.25rem;
+    
 }
 
 .body-light {
     line-height: 180%;
     color: var(--gry-blue);
     text-wrap: pretty;
-    margin-bottom: 1rem;
+    
 }
 
 hr {
     border: 1px solid var(--dk-gry-blue);
     width: 100%;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
 }
 
 .ranked-section {
