@@ -19,6 +19,7 @@ dl, dd, blockquote, figure {
 body {
     font-family: 'Inter';
     font-size: 15px;
+    background: var(--off-white);
 }
 
 /* Mobile styles */
@@ -290,7 +291,8 @@ hr {
         align-items: center;
         min-height: 100vh;
         min-height: 100svh;
-        margin: 3rem 0;
+        margin: 4rem 0 3rem;
+        background-color: var(--off-white);
     }
 
     .wrapper {
