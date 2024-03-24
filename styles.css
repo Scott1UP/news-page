@@ -284,6 +284,15 @@ hr {
 
 /* Desktop styles */
 @media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        min-height: 100svh;
+        margin: 3rem 0;
+    }
+
     .wrapper {
         max-width: 69.5rem;
         margin: 1rem;
@@ -301,9 +310,13 @@ hr {
         margin-bottom: 1rem;
     }
 
+    .logo-desktop {
+        width: 4rem;
+    }
+
     .logo-and-links .nav-link {
         padding: 0;
-        font-size: 1rem;
+        font-size: .938rem;
     }
 
     .nav-links-desktop {
@@ -323,6 +336,10 @@ hr {
         object-fit: cover;
     }
 
+    .hero {
+        gap: 2rem;
+    }
+
     .hero-and-new {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -336,11 +353,21 @@ hr {
     }
 
     .hero-heading {
-        font-size: 3.25rem;
+        font-size: 3.5rem;
     }
 
     .body-and-btn {
-        width: 110%;
+        width: 120%;
+        gap: 2.25rem;
+    }
+
+    .new-section {
+        padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+        background-color: var(--v-dk-blue);
+    }
+
+    .new-heading {
+        font-size: 2.5rem;
     }
 
     .ranked-section {
